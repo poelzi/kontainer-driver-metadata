@@ -1313,9 +1313,9 @@ func loadK8sRKESystemImages() map[string]v3.RKESystemImages {
 			IngressBackend:            m("k8s.gcr.io/defaultbackend:1.4"),
 			MetricsServer:             m("gcr.io/google_containers/metrics-server-amd64:v0.3.1"),
 		},
-		"v1.15.0-flowground1-1": {
+		"v1.15.0-rancher1-flowground-1": {
 			Etcd:                      m("quay.io/coreos/etcd:v3.3.10-rancher1"),
-			Kubernetes:                m("registry.hq.c3d2.de/poelzi/hyperkube:v1.15.0-flowground1"),
+			Kubernetes:                m("registry.hq.c3d2.de/poelzi/hyperkube:v1.15.0-rancher1-flowground"),
 			Alpine:                    m("rancher/rke-tools:v0.1.40"),
 			NginxProxy:                m("rancher/rke-tools:v0.1.40"),
 			CertDownloader:            m("rancher/rke-tools:v0.1.40"),
